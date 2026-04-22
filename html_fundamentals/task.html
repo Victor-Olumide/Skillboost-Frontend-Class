@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 2</title>
+</head>
+<body>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+  </form>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+<br>
+  <label for="gender">Gender:</label>
+  <select id="gender" name="gender">
+    <option value="">Select</option>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+  </select>
+<br>
+  <label for="maritalStatus">Marital Status:</label>
+  <select id="maritalStatus" name="maritalStatus">
+    <option value="">Select</option>
+    <option value="single">Single</option>
+    <option value="married">Married</option>
+    <option value="divorced">Divorced</option>
+  </select>
+<br>
+  <label for="occupation">Occupation:</label>
+  <input type="text" id="occupation" name="occupation">
+<br>
+  <label for="phone">Phone Number:</label>
+  <input type="tel" id="phone" name="phone">
+<br>
+  <label for="fluency">English Language Fluency:</label>
+  <input type="range" id="fluency" name="fluency" value="70" min="0" max="100">
+<br>
+  <label for="country">Region/Country:</label>
+  <select id="country" name="country">
+    <option value="">Select</option>
+    <optgroup label="Africa">
+      <option value="nigeria">Nigeria</option>
+      <option value="egypt">Egypt</option>
+      <option value="southAfrica">South Africa</option>
+    </optgroup>
+    <optgroup label="Asia">
+      <option value="china">China</option>
+      <option value="india">India</option>
+      <option value="japan">Japan</option>
+      </optgroup>
+      <optgroup label="Europe">
+        <option value="germany">Germany</option>
+        <option value="france">France</option>
+        <option value="uk">United Kingdom</option>
+      </optgroup>
+  </select>
+<br>
+  <label for="reason">Reason for Sign Up:</label>
+  <textarea id="reason" name="reason" ></textarea>
+<br>
+  <label for="category">Signup Category:</label>
+  <select id="category" name="category">
+    <option value="">...Select...</option>
+    <option value="foreign">Foreign</option>
+    <option value="local">Local</option>
+  </select>
+
+</body>
+</html>
