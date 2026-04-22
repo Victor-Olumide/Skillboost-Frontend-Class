@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./list.html">Lists</a></li>
+        <li><a href="./media.html">Media</a></li>
+        <li><a href="./table.html">Table</a></li>
+        <li><a href="./misc.html">Miscellaneous</a></li>
+        <li><a href="./form.html">Form</a></li>
+      </ul>
+    </nav>
+
+    <div>
+      <form action="/login" method="POST">
+        <label>Name:</label>
+        <input type="text" id="name" placeholder="Please enter your name" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Please enter your email" />
+        <br />
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Please enter your password"
+        />
+        <br />
+        <label>Short Bio:</label>
+        <textarea placeholder="Tell us about yourself..."></textarea>
+        <br />
+        <button type="submit">Submit</button>
+
+        <label>newsletter</label>
+        <input type="checkbox" />
+
+        <label>Book</label>
+        <input type="checkbox" />
+
+        <label>Food</label>
+        <input type="checkbox" />
+
+        <label>Drinks</label>
+        <input type="checkbox" />
+
+        <br />
+
+        <div>
+          <input type="radio" id="dewey" name="drone" value="dewey" />
+          <label for="dewey">Dewey</label>
+        </div>
+        <div>
+          <input type="radio" id="dewey" name="drone" value="dewey" />
+          <label for="dewey">Dewey</label>
+        </div>
+        <div>
+          <input type="radio" id="dewey" name="drone" value="dewey" />
+          <label for="dewey">Dewey</label>
+        </div>
+        <div>
+          <input type="radio" id="louie" name="drone" value="louie" />
+          <label for="louie">Louie</label>
+        </div>
+      </form>
+
+      <p>FieldSet and Legend</p>
+      <fieldset>
+        <legend>For Students</legend>
+        <label>Name:</label>
+        <input type="text" id="name" placeholder="Please enter your name" />
+        <br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Please enter your email" />
+        <br />
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Please enter your password"
+        />
+      </fieldset>
+      <fieldset>
+        <legend>For Teachers</legend>
+        <label>Name:</label>
+        <input type="text" id="name" placeholder="Please enter your name" />
+        <br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Please enter your email" />
+        <br />
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Please enter your password"
+        />
+      </fieldset>
+
+      <select>
+        <option value=""> ... Select a car ...</option>
+        <optgroup label="Swedish Cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+        </optgroup>
+
+        <optgroup label="Nigerian Cars">
+        <option value="gac">GAC</option>
+        <option value="innosan">INNOSAN</option>
+        <option value="nissan">Nissan</option>
+        <option value="car">Car</option>
+        </optgroup>
+
+    </select>
+    <output>60</output>
+    </div>
+  </body>
+</html>

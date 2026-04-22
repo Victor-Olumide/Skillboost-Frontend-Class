@@ -1,0 +1,54 @@
+## IDE
+
+-VSCODE
+
+##Commands on the terminal
+
+- mkdir <folder name> //make directory
+- cd <folder name> //check directory
+- code . //open the folder in VSCODE
+- cd .. //go back to the previous directory
+
+##Development principle
+-DRY principle //DON'T REPEAT YOURSELF
+-KISS principle //KEEP IT SIMPLE STUPID
+-YAGNI principle //YOU AIN'T GONNA NEED IT
+
+## Extension to download
+
+- Prettier
+  -Live Server
+  -Code Snap
+  -code checker
+  -auto rename tag
+  -auto close tag
+
+IDE stands for Integrated Development Environment.
+HTML (HyperText Markup Language)
+
+## media
+
+<img src="" alt=""> - img tag is for images, it can be local or online
+src is the image source
+alt is the alternative word to show or display when the image is still loading or not loading
+
+## table
+
+create a food roaster table
+HEADINGS days, morning afternoon and night
+SUNDAY TO SATURDAY
+
+## form
+
+### SIGNUP FORM
+
+name
+EMAIL
+gender
+Marital Status
+Occupation
+Phone Number
+English Language Fluency (use input type range)
+Region/ Country (use option and option group- list at least 10 countries)
+Reason for Sign Up
+Signup Category (Use Option - foreign/ local)
