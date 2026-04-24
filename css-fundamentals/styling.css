@@ -1,0 +1,62 @@
+/* Basic Css Snytax */
+/* selector {
+    property: value;
+} */
+
+/* Selectors in CSS */
+/* Universal Selector - All Element selector */
+* {
+    margin: 16px;
+    border: 2px dotted black;
+    font-size: 10px;
+}
+
+/* Type Selector - Element Selector */
+p {
+    font-size: 15px;
+    color:rgb(255, 0, 0);
+}
+h1 {
+    color: blue;
+    font-size: 20px;
+}
+
+/* Child Selector */
+    section > p {
+        color : green;
+    }
+
+    section > h3 {
+        font-size: 20px;
+    }
+
+    /* Sibling Selector */
+    h2 + p {
+        color: purple;
+        padding: 10px;
+    }
+    h4 + p {
+        color: orange;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+/* Class Selector */
+.list {
+    border: 2px solid green;
+    background-color: #000000;
+}
+
+.list li {
+    text-align: center;
+    margin: 3px;
+    padding: 5px;
+    text-shadow: 10px 2px black;
+    color: yellow;
+}
+
+/* Id Selector */
+#main-heading {
+    color: red;
+    font-size: 30px;
+    text-align: center;
+}
