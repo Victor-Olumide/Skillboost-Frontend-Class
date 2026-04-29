@@ -6,72 +6,143 @@
     <title>CSS Basics</title>
     <link rel="icon" href="./GRAPHICS.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./styling.css" />
-    
   </head>
   <body>
-    <h1 class="t">CSS Fundamentals</h1>
+    <nav>
+      <a href="#css">CSS Fundamentals</a>
+      <a href="#internal">Internal CSS</a>
+      <a href="#external">External CSS</a>
+      <a href="#inline">Inline CSS</a>
+      <a href="#entities">Character Entities</a>
+      <a href="#form">Form Styling</a>
+    </nav>
+    <h1 id="css">CSS Fundamentals</h1>
     <p>
       Cascading Style Sheets (CSS) is a stylesheet language used to describe the
       presentation of a document written in HTML or XML (including XML dialects
       such as SVG, MathML or XHTML). CSS describes how elements should be
       rendered on screen, on paper, in speech, or on other media.
     </p>
-    <section>
-        <h2>Internal CSS</h2>
-        <p>
-          Internal CSS is defined within a <code>&lt;style&gt;</code> element in the
-          head section of an HTML document. It allows you to apply styles to
-          specific elements on a single page. Here's an example of how to use
-          internal CSS:
-        </p>
+    <section id="internal">
+      <h2>Internal CSS</h2>
+      <p>
+        Internal CSS is defined within a <code>&lt;style&gt;</code> element in
+        the head section of an HTML document. It allows you to apply styles to
+        specific elements on a single page. Here's an example of how to use
+        internal CSS:
+      </p>
     </section>
 
-    <section>
-        <h3>External CSS</h3>
-        <p>
-          External CSS is defined in a separate file with a .css extension. This
-          file is linked to the HTML document using the <code>&lt;link&gt;</code>
-          element in the head section. External CSS allows you to apply styles
-          across multiple pages by linking to the same stylesheet. Here's an
-          example of how to use external CSS:
-        </p>
+    <section id="external">
+      <h3 id="external">External CSS</h3>
+      <p>
+        External CSS is defined in a separate file with a .css extension. This
+        file is linked to the HTML document using the <code>&lt;link&gt;</code>
+        element in the head section. External CSS allows you to apply styles
+        across multiple pages by linking to the same stylesheet. Here's an
+        example of how to use external CSS:
+      </p>
+      <span>Some text here</span>
     </section>
 
-    <div>
-        <h4>Inline CSS</h4>
-        <p>
-          Inline CSS is defined within the style attribute of an HTML element. It allows you to apply styles to a specific element on a single page. Here's an example of how to use inline CSS:
-        </p>
+    <div id="inline">
+      <h4>Inline CSS</h4>
+      <p>
+        Inline CSS is defined within the style attribute of an HTML element. It
+        allows you to apply styles to a specific element on a single page.
+        Here's an example of how to use inline CSS:
+      </p>
     </div>
 
     <section>
-        <article>
-            <p id="main-heading">character entity representations</p>
-            <ul class="list">
-                <li>Non-breaking space: &nbsp; (or &#160;) </li>
-                <li>&lt; (Less than): &lt; (or &#60;)</li>
-                <li>&gt; (Greater than): &gt; (or &#62;)</li>
-                <li>&amp; (Ampersand): &amp; (or &#38;)</li>
-                <li>&quot; (Double quotation mark): &quot; (or &#34;)</li>
-                <li>&apos; (Single quotation mark): &apos; (or &#39;)</li>
-                <li> (Copyright): &copy; (or &#169;)</li>
-                <li> (Registered): &reg; (or &#174;)</li>
-                <li> (Euro): &euro; (or &#8364;)</li>
-                <li> (Pound): &pound; (or &#163;)</li>
-                <li> (Yen): &yen; (or &#165;)</li>
-            </ul>
-    
-        </article>
+      <article>
+        <p id="main-heading">character entity representations</p>
+        <ul class="list">
+          <li>Non-breaking space: &nbsp; (or &#160;)</li>
+          <li>&lt; (Less than): &lt; (or &#60;)</li>
+          <li>&gt; (Greater than): &gt; (or &#62;)</li>
+          <li>&amp; (Ampersand): &amp; (or &#38;)</li>
+          <li>&quot; (Double quotation mark): &quot; (or &#34;)</li>
+          <li>&apos; (Single quotation mark): &apos; (or &#39;)</li>
+          <li>(Copyright): &copy; (or &#169;)</li>
+          <li>(Registered): &reg; (or &#174;)</li>
+          <li>(Euro): &euro; (or &#8364;)</li>
+          <li>(Pound): &pound; (or &#163;)</li>
+          <li>(Yen): &yen; (or &#165;)</li>
+        </ul>
+      </article>
     </section>
 
-    <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" />
-        <br />
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" />
-        <br />
-        <input type="submit" value="Submit" />
+    <div>
+      <p class="test">form field</p>
+      <p class="test">form field</p>
+      <p class="test">form field</p>
+      <p class="test">form field</p>
+      <p class="test">form field</p>
+    </div>
+
+    <form id="form" action="/submit" method="post">
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your name..."
+      />
+      <br />
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email..."
+      />
+      <br />
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Enter your password..."
+      />
+      <br />
+      <label for="tel">Telephone:</label>
+      <input
+        type="tel"
+        id="tel"
+        name="tel"
+        placeholder="Enter your telephone number..."
+      />
+      <br />
+      <input type="submit" value="Submit" />
+      <br />
+      <label for="note">Short Note:</label>
+      <textarea
+        name="note"
+        id="note"
+        cols="30"
+        rows="10"
+        placeholder="Enter a short note..."
+      ></textarea>
     </form>
+
+    <ol>
+      <li>list of Authors</li>
+      <li>
+        <ul>
+          <li>Author 1</li>
+          <li>Author 2</li>
+          <li>Author 3</li>
+        </ul>
+      </li>
+      <li>list of Books</li>
+      <li>
+        <ul>
+          <li>Book 1</li>
+          <li>Book 2</li>
+          <li>Book 3</li>
+        </ul>
+      </li>
+    </ol>
   </body>
 </html>

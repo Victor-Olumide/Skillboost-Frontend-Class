@@ -5,58 +5,139 @@
 
 /* Selectors in CSS */
 /* Universal Selector - All Element selector */
-* {
-    margin: 16px;
-    border: 2px dotted black;
-    font-size: 10px;
+
+*{
+    background-color: black;
+    color: white;
 }
 
-/* Type Selector - Element Selector */
-p {
-    font-size: 15px;
-    color:rgb(255, 0, 0);
+/* Element Selector - Selects all elements of a specific type 
+*/
+
+body {
+    padding: 12px;
+    font-family: 'Courier New', Courier, monospace;
 }
+
 h1 {
-    color: blue;
-    font-size: 20px;
-}
-
-/* Child Selector */
-    section > p {
-        color : green;
-    }
-
-    section > h3 {
-        font-size: 20px;
-    }
-
-    /* Sibling Selector */
-    h2 + p {
-        color: purple;
-        padding: 10px;
-    }
-    h4 + p {
-        color: orange;
-        font-family: 'Courier New', Courier, monospace;
-    }
-
-/* Class Selector */
-.list {
-    border: 2px solid green;
-    background-color: #000000;
-}
-
-.list li {
-    text-align: center;
-    margin: 3px;
-    padding: 5px;
-    text-shadow: 10px 2px black;
     color: yellow;
-}
-
-/* Id Selector */
-#main-heading {
-    color: red;
-    font-size: 30px;
     text-align: center;
 }
+nav {
+    padding: 10px;
+    text-align: center;
+}
+
+/* child selectors - Selects direct children of an element */
+section > p {
+    color: #F77100;
+}
+
+
+/* silbings selector - Selects all siblings of an element */
+
+h3 + p {
+    color: blue;
+}
+
+h3 ~ span {
+    color: green;
+}
+
+/* class Selectors - Selects all elements with a specific class attribute */
+.list {
+    background-image: url(./JW.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* id selector - Selects a single element with a specific id attribute */
+
+#form {
+    background-color: white;
+    text-align: start;
+}
+
+.test:first-child {
+    color: red;
+}
+
+/* attribute selector - Selects elements based on the presence or value of an attribute  */
+input[type="text"] {
+  border: 2px solid #ff0000;
+  margin-top: 10px;
+  width: 80%;
+  height: 20px;
+}
+
+input[type="email"] {
+  border: 2px dotted #00ff00;
+  margin-top: 10px;
+  width: 80%;
+  height: 20px;
+}
+
+input[type="submit"] {
+  background-color: #F77100;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+input[type="password"] {
+  border: 2px dashed #0000ff;
+  margin-top: 10px;
+  width: 80%;
+  height: 20px;
+}
+input[type="tel"] {
+  margin-top: 10px;
+  border: #00ff00 2px dashed;
+  width: 80%;
+  height: 20px;
+}
+
+/* pseudo-class selector - Selects elements based on their state or position in the document */
+a:visited {
+    color: red;
+}
+li:first-child {
+    font-weight: bold;
+}
+li:last-child {
+    font-style: italic;
+}
+li:nth-child(6) {
+    text-decoration: underline;
+}
+
+
+/* pseudo-element selector - Selects and styles a specific part of an element  */
+
+p::first-letter {
+    font-size: 150%;
+    color: red;
+}
+
+::placeholder {
+    color: #00fff2;
+    font-style: italic;
+}
+
+/* group selectors - Selects multiple elements and applies the same styles to them */
+h1, h2, h3 {
+  font-family: Georgia, serif;
+}
+
+li, p {
+    font-size: 120%;
+}
+
+/* descendant selector - Selects all elements that are descendants of a specified element */
+ol ul li {
+    color: brown;
+}
+
