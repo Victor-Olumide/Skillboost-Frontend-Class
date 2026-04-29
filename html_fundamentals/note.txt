@@ -19,7 +19,7 @@
 - Prettier
   -Live Server
   -Code Snap
-  -code checker
+  -code spell checker
   -auto rename tag
   -auto close tag
 
